@@ -1,0 +1,19 @@
+//var listaDeCompras = [];
+//listaDeCompras[3] = 'Tomates';
+//listaDeCompras[1] = 'Lechuga';
+
+//console.log(listaDeCompras.length);
+//console.log(listaDeCompras);
+//listaDeCompras[1];
+//var elementoDelArrey = listaDeCompras[1];
+//console.log(elementoDelArrey);
+//var colores = ['amarillo','azul'];
+//colores.push('rojo');
+//colores.unshift('verde');
+//colores.pop();
+//colores.shift();
+//console.log(colores);
+
+var pintores =['Picasso', 'Velazquez', 'Van Gogh', 'Dali'];
+var incluyeDali = pintores.includes('Dali');
+console.log(incluyeDali);
