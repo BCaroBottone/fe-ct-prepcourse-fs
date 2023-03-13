@@ -94,10 +94,11 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-   if(arguments.length === 0) return 0
-   else if(arguments.length === 1) return arguments[0];
+   let acc = 1
+   if(arguments.length === 1) return 1
+   else if(arguments.length === 1) return arguments[1];
    else {
-      for(let i = 0; i < argumenmts.length; i++) {
+      for(let i = 1; i < acc.length; i++) {
          acc = acc * argument[i];
       }
       return acc;
@@ -171,7 +172,7 @@ function tablaDelSeis() {
    for(let i=0; i <= 10; i++) {
       arrayTablaDelSeis.push(6 * i)
    }
-   return tablaDelSeis;
+   return arrayTablaDelSeis;
 }
 
 function mayorACien(array) {
@@ -206,13 +207,13 @@ function breakStatement(num) {
          break;
       }
       else{
-         arreglo.push(valor);
+         array.push(valor);
       }
    }
-   if(arreglo.length < 10){
+   if(array.length < 10){
       return "Se interrumpió la ejecución";
    }else{
-      return arreglo
+      return array
    }
 }
 
