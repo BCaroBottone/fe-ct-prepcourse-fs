@@ -94,15 +94,13 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-   let acc = 1
-   if(arguments.length === 1) return 1
-   else if(arguments.length === 1) return arguments[1];
-   else {
-      for(let i = 1; i < acc.length; i++) {
-         acc = acc * argument[i];
-      }
-      return acc;
-   }
+  if (arguments.length === 0) return 0;
+  if (arguments.length === 1) return arguments [0];
+  let producto = 1;
+  for (let i = 0;i < arguments.length;i ++){
+   producto = arguments[i] * producto;
+  }
+  return producto;
 }
 
 function cuentoElementos(array) {
@@ -126,11 +124,8 @@ function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
-   let texto = num.toString();
-   let primerValor = texto.charAt(0);
-   if(primerValor === 9) {
-      return true;
-   } 
+   var str = String(num);
+   if(str [0] === '9') return true;
    else return false;
 }
 
@@ -138,9 +133,9 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
-   let comparar = array [0];
-   for(let i=1; i < array.lenggth; i++) {
-      if(array [i] !== comparar) {
+   var primero = array [0];
+   for(let i = 1; i< array.length; i ++) {
+      if(array[i] !== primero){
          return false;
       }
    }
