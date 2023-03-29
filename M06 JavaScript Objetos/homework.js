@@ -76,7 +76,7 @@ function tienePropiedad(objeto, propiedad) {
    // Verifica si el objeto recibido posee una propiedad con el mismo nombre que el parámetro "propiedad".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if(objeto.hasOwnProperty("propiedad")) {
+   if(objeto.hasOwnProperty(propiedad)) {
       return true;
    } else{
       return false;
@@ -119,10 +119,10 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Retornar el arreglo.
    // Tu código:
    
-   for(let i=0; i<objetoMuchosUsuarios.length; i++){
-      objetoMuchosUsuarios + uruario.esPremium; true;
+   for(let usuario of objetoMuchosUsuarios) {
+      usuario.esPremium = true;
    }
-   return objetoMuchosUsuarios
+   return objetoMuchosUsuarios;
 }
 
 function sumarLikesDeUsuario(objetoUsuario) {
